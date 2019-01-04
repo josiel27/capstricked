@@ -1,0 +1,8 @@
+.cardStacked{
+    position: absolute;
+    top: 90px;
+    left: 35px;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari 3-8 */
+    transform: rotate(20deg);
+}

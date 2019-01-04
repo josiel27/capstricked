@@ -1,0 +1,259 @@
+.classPalco {
+    /* background-color: rgba(199, 199, 199, 0.568); */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 5%;
+}
+
+
+.background {
+    background-image: url(background2.png);
+    /* background-position: right bottom, left top; */
+    background-repeat: repeat-x;
+    padding-top: 525px;
+    position: absolute;
+    animation: mymove 20s infinite;
+    animation-delay: 0.1s;
+    width: 2000%;
+    animation-timing-function: linear;
+}
+
+.dinoClass {
+    width: 150px;
+    height: 120px;
+    background-image: url(dino.gif);
+    position: absolute;
+    right: 10%;
+}
+
+@keyframes mymove {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -2000px;
+    }
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.carousel{
+    top: 0px;
+    width: 70%;
+    max-width: 500px;
+    margin: auto !important;
+}
+.carouselHoojoke{
+    width: 25% !important;
+    margin: auto !important;
+}
+
+.casourelLetsmeet{
+    width: 40% !important;
+}
+
+.cardStackedRight{
+    width: 90% !important;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    -ms-transform: rotate(5deg); /* IE 9 */
+    -webkit-transform: rotate(5deg); /* Safari 3-8 */
+    transform: rotate(5deg);
+}
+.cardStackedLeft{
+    width: 90% !important;
+    position: absolute;
+    top: 5%;
+    left: -10%;
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Safari 3-8 */
+    transform: rotate(-5deg);
+}
+
+body { 
+    /* overflow-x: hidden;  */
+    /* background-color: beige; */
+    background-color: #ffff39;
+    
+    position: absolute;
+}
+
+.icon{
+    width: 20%;
+    position: fixed;
+    max-width: 100px;
+    top: 3%;
+    left: 5%;
+    
+}
+.apae{
+    position: fixed;
+    width: 20%; 
+    max-width: 100px; 
+    top: 2%;
+    right: 3%;
+}
+
+.bottomMenu{
+    position: fixed;
+    width: 10%; 
+    max-width: 80px; 
+    bottom: 3%;
+   
+}
+
+.menu{
+    left: 10%;
+    cursor: pointer;
+}
+
+.bingo{
+    left: 33%;
+    cursor: pointer;
+}
+
+.cart{
+    left: 58%;
+    cursor: pointer;
+}
+
+.user{
+    left: 83%;
+}
+
+
+section {
+    padding: 2rem 0;
+}
+
+
+.bottomMenu:hover {
+    width: 15%;
+    background-color:  rgba(0, 195, 255, 0.452);
+}
+
+.bottomMenu:active {
+    background-color: rgba(0, 195, 255, 0.452);
+    box-shadow: 0 5px rgba(119, 119, 119, 0.479);
+    transform: translateY(4px);
+  }
+
+
+ /*///////////////////////////////////////
+ 
+ 
+                BUTTON
+ 
+ 
+ ///////////////////////////////////////*/
+
+
+
+
+
+button {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+    background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    border-bottom: 4px solid #2b8bc6;
+    color: #fbfbfb;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+    font-size: 15px;
+    text-align: left;
+    text-indent: 5px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+    cursor: pointer;
+  
+  /* Just for presentation */  
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  button:active {
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+    top: 2px;
+  }
+  
+  button:after {
+    content: "";
+    width: 0;
+    height: 100%;
+    display: block;
+    border-top: 20px solid #187dbc;
+    border-bottom: 20px solid #187dbc;
+    border-left: 16px solid transparent;
+    border-right: 20px solid #187dbc;
+    position: absolute;
+    opacity: 0.6; 
+    right: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;  
+  }
+  
+  /* Button pointing left */
+  
+  button.back {
+    text-align: right;
+    padding-right: 12px;
+    box-sizing: border-box;
+  }
+  button.back:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 20px solid #187dbc;
+    border-bottom: 20px solid #187dbc;
+    border-right: 16px solid transparent;
+    border-left: 20px solid #187dbc;
+    position: absolute;
+    opacity: 0.6; 
+    left: 0;
+    top: 0;
+    border-radius: 5px 0 0 5px;    
+  }
+  
+  /* Single buttons */
+  
+  button.site {
+    width: 40px;
+    text-align: center;
+    text-indent: 0;
+  }
+  button.site:after{
+    display: none;
+  }
+  
+  /* Presentation stuff */
+  .holder {
+    width: 400px;
+    background: #efefef;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;  
+    text-align: center;
+  }
+  
+  h1 {
+    font: 400 16px 'Open Sans';
+    text-transform: uppercase;
+    color: #999;
+    text-shadow: 1px 1px 1px #fff;
+    margin-bottom: 30px;
+  } 
+  
+  
+  
