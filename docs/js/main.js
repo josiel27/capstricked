@@ -1,4 +1,7 @@
 var cardMiddle = $('#cardMiddle');
+var numberCP = document.getElementById('numberCP');
+numberRandom = Math.floor(Math.random() * 99999) + 900000;
+numberCP.textContent = numberRandom;
 
 animationRight = () => {
     cardMiddle.addClass('animated bounceOutLeft');
@@ -9,6 +12,10 @@ animationRight = () => {
             cardMiddle.removeClass('animated bounceInRight');
         }, 500);
     }, 400);
+
+    numberRandom = Math.floor(Math.random() * 99999) + 900000;
+    numberCP.textContent = numberRandom;
+  console.log()
 }
 
 animationLeft = () => {
